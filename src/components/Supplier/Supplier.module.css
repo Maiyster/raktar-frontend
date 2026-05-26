@@ -4,7 +4,36 @@
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.02), 0 1px 3px rgba(0,0,0,0.05);
     border: 1px solid #e2e8f0;
-    max-width: 900px;
+    max-width: 1000px;
+}
+
+.tabContainer {
+    display: flex;
+    gap: 1rem;
+    border-bottom: 2px solid #e2e8f0;
+    margin-bottom: 2rem;
+}
+
+.tabButton {
+    background: none;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+}
+
+.tabButton:hover {
+    color: #10b981;
+}
+
+.activeTab {
+    color: #10b981;
+    border-bottom: 3px solid #10b981;
 }
 
 .supplierContainer h2 {
@@ -29,6 +58,32 @@
     font-size: 1.1rem;
     border-bottom: 2px solid #f1f5f9;
     padding-bottom: 0.5rem;
+}
+
+.dateInputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 400px;
+}
+
+.dateInputGroup label {
+    font-size: 0.9rem;
+    color: #475569;
+    font-weight: 500;
+}
+
+.dateInputGroup input {
+    padding: 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.dateInputGroup input:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
 }
 
 .tableHeader {
@@ -134,3 +189,83 @@
 
 .alert.success { background-color: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
 .alert.error { background-color: #fee2e2; color: #991b1b; border: 1px solid #fecaca; }
+
+.filterSection {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    color: #334155;
+}
+
+.filterSelect {
+    padding: 0.5rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    background-color: white;
+}
+
+.errorBanner {
+    padding: 1rem;
+    background-color: #fef2f2;
+    color: #ef4444;
+    border: 1px solid #fca5a5;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.statusMessage, .noDataText {
+    text-align: center;
+    color: #64748b;
+    padding: 2rem;
+}
+
+.tableWrapper {
+    overflow-x: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+}
+
+.deliveryTable {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.deliveryTable th {
+    background-color: #f8f9fa;
+    color: #475569;
+    padding: 1rem;
+    font-weight: 600;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.deliveryTable td {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+    vertical-align: middle;
+}
+
+.deliveryTable tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.statusBadge {
+    padding: 0.35rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.pending { background-color: #fef3c7; color: #d97706; border: 1px solid #fde68a; }
+.bysupplier { background-color: #e0e7ff; color: #4f46e5; border: 1px solid #c7d2fe; }
+.dispatched { background-color: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
+.received { background-color: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
+.defaultStatus { background-color: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; }
