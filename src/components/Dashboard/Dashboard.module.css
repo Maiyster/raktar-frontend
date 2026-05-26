@@ -1,0 +1,111 @@
+.dashboardContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #1e293b;
+    color: white;
+    padding: 0.75rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.logoSection h1 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.logoutBtn {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.logoutBtn:hover {
+    background-color: #dc2626;
+}
+
+.layoutBody {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 260px;
+    background-color: #ffffff;
+    border-right: 1px solid #e2e8f0;
+    padding: 1.5rem 0;
+}
+
+.menuList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuItem, .activeMenuItem {
+    padding: 0.85rem 2rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: #475569;
+    transition: all 0.2s ease;
+    border-left: 4px solid transparent;
+}
+
+.menuItem:hover {
+    background-color: #f1f5f9;
+    color: #0f172a;
+}
+
+.activeMenuItem {
+    background-color: #e2e8f0;
+    color: #2563eb;
+    border-left: 4px solid #2563eb;
+    font-weight: 600;
+}
+
+.mainContent {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.welcomeCard {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.welcomeCard h2 {
+    margin-top: 0;
+    color: #1e293b;
+}
+
+.welcomeCard p {
+    color: #64748b;
+}

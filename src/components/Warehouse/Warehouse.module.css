@@ -1,0 +1,171 @@
+.warehouseContainer {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.tableHeaderSection h2 {
+    margin-top: 0;
+    color: #1e293b;
+    margin-bottom: 0.25rem;
+}
+
+.tableHeaderSection p {
+    color: #64748b;
+    margin-bottom: 1.5rem;
+}
+
+.tableWrapper {
+    overflow-x: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+}
+
+.deliveryTable {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.deliveryTable th {
+    background-color: #f8f9fa;
+    color: #475569;
+    padding: 1rem;
+    font-weight: 600;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.deliveryTable td {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+    vertical-align: middle;
+}
+
+.deliveryTable tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.actionSelect {
+    padding: 0.5rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    background-color: white;
+    color: #334155;
+    font-size: 0.9rem;
+    outline: none;
+    min-width: 140px;
+}
+
+.actionSelect:focus {
+    border-color: #2563eb;
+}
+
+.disabledText {
+    color: #94a3b8;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.errorBanner {
+    padding: 1rem;
+    background-color: #fef2f2;
+    color: #ef4444;
+    border: 1px solid #fca5a5;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.statusMessage {
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+.noData {
+    color: #64748b;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Kapacitás szekció és térkép stílusai */
+.capacitySection {
+    margin-top: 3rem;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 2rem;
+}
+
+.capacitySection h3 {
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+}
+
+.gridCell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 0.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.cellTitle {
+    color: #1e293b;
+    margin-bottom: 0.25rem;
+}
+
+.cellStatus {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+.cellFree {
+    background-color: #dcfce7;
+    border-color: #22c55e;
+    color: #166534;
+}
+
+.cellOccupied {
+    background-color: #fee2e2;
+    border-color: #ef4444;
+    color: #991b1b;
+}
+
+/* Dinamikus státusz színek a legördülő menühöz */
+.statusPending {
+    background-color: #fef3c7;
+    color: #d97706;
+    border-color: #fde68a;
+    font-weight: 600;
+}
+
+.statusApproved {
+    background-color: #dcfce7;
+    color: #15803d;
+    border-color: #bbf7d0;
+    font-weight: 600;
+}
+
+.statusCancelled {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border-color: #fecaca;
+    font-weight: 600;
+}
